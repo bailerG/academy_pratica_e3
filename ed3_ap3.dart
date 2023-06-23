@@ -6,6 +6,10 @@ void main() {
   final listaRaios =
       List.generate(10, (index) => aleatorio.nextDouble() * 99 - 1);
 
+  calcularRaios(listaRaios);
+}
+
+void calcularRaios(List<double> listaRaios) {
   for (final raio in listaRaios) {
     final area = areaCirculo(raio);
     final perimetro = perimetroCirculo(raio);
